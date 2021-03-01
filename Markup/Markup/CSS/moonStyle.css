@@ -1,0 +1,55 @@
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding-top: 7px;
+}
+
+div.navbar Button{
+    color: whitesmoke;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* mouse over link */
+div.navbar Button:hover {
+    color: turquoise;
+  }
+  
+/* selected link */
+div.navbar Button:active {
+    color: turquoise;
+  }
+
+.navLogo{
+    flex: 0 0 150px;
+    min-width: 50px;
+}
+
+.navLogoImg{
+    width: 100%;
+    height: auto;
+}
+
+.leftNav{
+    flex:1;
+    text-align: right;
+    margin-right: 50px;
+}
+
+.rightNav{
+    flex:1;
+    text-align: left;
+    margin-left: 50px;
+}
+
+footer{
+    
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+}
