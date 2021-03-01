@@ -7,7 +7,7 @@
     padding-top: 7px;
 }
 
-div.navbar Button{
+.navbar Button{
     color: whitesmoke;
     background-color: transparent;
     border: none;
@@ -16,12 +16,14 @@ div.navbar Button{
 }
 
 /* mouse over link */
-div.navbar Button:hover {
+.navbar Button:hover {
+    background-color: gray;
+    border-radius: 15px;
     color: turquoise;
   }
   
 /* selected link */
-div.navbar Button:active {
+.navbar Button:active {
     color: turquoise;
   }
 
@@ -48,8 +50,14 @@ div.navbar Button:active {
 }
 
 footer{
-    
     padding-top: 32px;
     padding-bottom: 32px;
-    
+}
+
+i{
+    cursor: pointer;
+}
+
+@media (max-width: 600px){
+
 }
