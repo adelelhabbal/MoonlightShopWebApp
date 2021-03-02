@@ -1,51 +1,119 @@
-
-.navbar-content-wrapper{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+.navbar{
     background-color: black;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    .left-nav, .right-nav{
-        flex: 1;
-        text-align: right;
-        padding-inline-start: 0px;
-        li{
-            display: inline;
-            padding: 5px;
-            margin: 5px;
-            color: whitesmoke;
-            list-style: none;
-            border-radius: 15px;
-            cursor: pointer;
-            transition: all 0.4s linear;
-            &:hover{
-                background-color: gray;
-                color: turquoise;
-            }
-            &:active{
-                color: turquoise;
+    .drop-down-menu{
+        display: none;
+    }
+    .navbar-content-wrapper{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        .left-nav, .right-nav{
+            flex: 1;
+            text-align: right;
+            padding-inline-start: 0px;
+            li{
+                display: inline;
+                padding: 5px;
+                margin: 5px;
+                color: whitesmoke;
+                list-style: none;
+                border-radius: 15px;
+                cursor: pointer;
+                transition: all 0.4s linear;
+                &:hover{
+                    background-color: gray;
+                    color: turquoise;
+                }
+                &:active{
+                    color: turquoise;
+                }
             }
         }
-    }
-    .left-nav{
-        margin-right: 50px;
-        text-align: right;
-    }
-    .right-nav{
-        margin-left: 50px;
-        text-align: left;
-    }
-    .nav-logo{
-        flex: 0 0 150px;
-        min-width: 150px;
-        img{
-            width: 100%;
-            height: auto;
+        .left-nav{
+            margin-right: 50px;
+            text-align: right;
+        }
+        .right-nav{
+            margin-left: 50px;
+            text-align: left;
+        }
+        .nav-logo{
+            flex: 0 0 150px;
+            min-width: 150px;
+            img{
+                width: 100%;
+                height: auto;
+            }
         }
     }
 }
 
 @media (max-width: 768px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 15px;
+        .drop-down-menu{
+            cursor: pointer;
+            display: inline-flex;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 5px;
+            height: 28px;
+            align-items: center;
+            justify-content: center;
+            padding: 3px 10px;
+            transition: border-color 0.4s linear;
+            .menu-toggle{
+                display: inline-block;
+                width: 30px; height: 2px;
+                border-radius: 5px;
+                position: relative;
+                background-color: white;
+                transition: all 0.4s linear;
+                &:after{
+                    content: "";
+                    display: inline-block;
+                    width: 30px; height: 2px;
+                    border-radius: 5px;
+                    position: absolute;
+                    bottom: -8px; left: 0;
+                    background-color: white;
+                    transition: all 0.4s linear;
+                }
+                &:before{
+                    content: "";
+                    display: inline-block;
+                    width: 30px; height: 2px;
+                    border-radius: 5px;
+                    position: absolute;
+                    top: -8px; left: 0;
+                    background-color: white;
+                    transition: all 0.4s ease-out;
+                }
+            }
+            &.open{
+                border-color: transparent;
+                .menu-toggle{
+                    transform: rotate(45deg);
+                    &:after{
+                        background-color: transparent;
+                    }
+                    &:before{
+                        top: 0;
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+        }
+        .navbar-content-wrapper{
+            box-sizing: border-box;
+            padding: 0;
+            height: 0;
+            overflow: hidden;
+        }
+    }
 }
