@@ -1,0 +1,66 @@
+.navbar-content-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.navbar-content-wrapper .left-nav, .navbar-content-wrapper .right-nav {
+  flex: 1;
+  text-align: right;
+  padding-inline-start: 0px;
+}
+.navbar-content-wrapper .left-nav li, .navbar-content-wrapper .right-nav li {
+  display: inline;
+  padding: 5px;
+  margin: 5px;
+  color: whitesmoke;
+  list-style: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+.navbar-content-wrapper .left-nav li:hover, .navbar-content-wrapper .right-nav li:hover {
+  background-color: gray;
+  color: turquoise;
+}
+.navbar-content-wrapper .left-nav li:active, .navbar-content-wrapper .right-nav li:active {
+  color: turquoise;
+}
+.navbar-content-wrapper .left-nav {
+  margin-right: 50px;
+  text-align: right;
+}
+.navbar-content-wrapper .right-nav {
+  margin-left: 50px;
+  text-align: left;
+}
+.navbar-content-wrapper .nav-logo {
+  flex: 0 0 150px;
+  min-width: 150px;
+}
+.navbar-content-wrapper .nav-logo img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  font-size: 10px;
+  text-align: center;
+  background-color: lightgray;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.drop-down-menu {
+  display: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=moonStyle.css.map */
