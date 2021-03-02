@@ -1,5 +1,5 @@
 .custom-navbar{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.6);
     .drop-down-menu{
         display: none;
     }
@@ -51,72 +51,103 @@
             }
         }
     }
+    
+    .nav-logo-mobile{
+        display: none;
+        flex: 0 0 150px;
+        max-width: 150px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
 }
+@media (min-width: 768px){
+    #navBar{
+        display: block !important;
+    }
+    .custom-navbar{
+        &:after{
 
-@media (max-width: 768px){
+        }
+    }
+}
+@media (max-width: 767px){
     .custom-navbar{
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         padding: 15px;
-        .drop-down-menu{
-            cursor: pointer;
-            display: inline-flex;
-            border: 1px solid rgba(255, 255, 255, 0.4);
-            border-radius: 5px;
-            height: 28px;
+        .mobile-header-wrapper{
+            flex: 1;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
             align-items: center;
-            justify-content: center;
-            padding: 15px 10px;
-            transition: border-color 0.4s linear;
-            &::after{
-                content: none;
+            .nav-logo-mobile{
+                display: block;
             }
-            .menu-toggle{
-                display: inline-block;
-                width: 30px; height: 2px;
+            .drop-down-menu{
+                cursor: pointer;
+                display: inline-flex;
+                border: 1px solid rgba(255, 255, 255, 0.4);
                 border-radius: 5px;
-                position: relative;
-                background-color: white;
-                transition: all 0.4s linear;
-                &:after{
-                    content: "";
+                height: 28px;
+                align-items: center;
+                justify-content: center;
+                padding: 15px 10px;
+                transition: border-color 0.4s linear;
+                &::after{
+                    content: none;
+                }
+                .menu-toggle{
                     display: inline-block;
                     width: 30px; height: 2px;
                     border-radius: 5px;
-                    position: absolute;
-                    bottom: -8px; left: 0;
+                    position: relative;
                     background-color: white;
                     transition: all 0.4s linear;
-                }
-                &:before{
-                    content: "";
-                    display: inline-block;
-                    width: 30px; height: 2px;
-                    border-radius: 5px;
-                    position: absolute;
-                    top: -8px; left: 0;
-                    background-color: white;
-                    transition: all 0.4s ease-out;
-                }
-            }
-            &.open{
-                border-color: transparent;
-                .menu-toggle{
-                    transform: rotate(45deg);
                     &:after{
-                        background-color: transparent;
+                        content: "";
+                        display: inline-block;
+                        width: 30px; height: 2px;
+                        border-radius: 5px;
+                        position: absolute;
+                        bottom: -8px; left: 0;
+                        background-color: white;
+                        transition: all 0.4s linear;
                     }
                     &:before{
-                        top: 0;
-                        transform: rotate(90deg);
+                        content: "";
+                        display: inline-block;
+                        width: 30px; height: 2px;
+                        border-radius: 5px;
+                        position: absolute;
+                        top: -8px; left: 0;
+                        background-color: white;
+                        transition: all 0.4s ease-out;
+                    }
+                }
+                &.open{
+                    border-color: transparent;
+                    .menu-toggle{
+                        transform: rotate(45deg);
+                        &:after{
+                            background-color: transparent;
+                        }
+                        &:before{
+                            top: 0;
+                            transform: rotate(90deg);
+                        }
                     }
                 }
             }
+
         }
         .navbar-content-wrapper{
             display: none;
             .nav-logo{
+                display: none;
                 order: 1;
                 flex: 0 0 auto;
                 margin-bottom: 15px;
