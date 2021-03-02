@@ -1,4 +1,4 @@
-.navbar{
+.custom-navbar{
     background-color: black;
     .drop-down-menu{
         display: none;
@@ -15,14 +15,16 @@
             text-align: right;
             padding-inline-start: 0px;
             li{
-                display: inline;
+                display: inline-block;
                 padding: 5px;
                 margin: 5px;
                 color: whitesmoke;
                 list-style: none;
                 border-radius: 15px;
+                text-align: center;
                 cursor: pointer;
                 transition: all 0.4s linear;
+                min-width: 100px;
                 &:hover{
                     background-color: gray;
                     color: turquoise;
@@ -52,7 +54,7 @@
 }
 
 @media (max-width: 768px){
-    .navbar{
+    .custom-navbar{
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -65,8 +67,11 @@
             height: 28px;
             align-items: center;
             justify-content: center;
-            padding: 3px 10px;
+            padding: 15px 10px;
             transition: border-color 0.4s linear;
+            &::after{
+                content: none;
+            }
             .menu-toggle{
                 display: inline-block;
                 width: 30px; height: 2px;
@@ -113,12 +118,23 @@
             display: none;
             .nav-logo{
                 order: 1;
+                flex: 0 0 auto;
+                margin-bottom: 15px;
             }
             .left-nav{
                 order: 2;
+                flex: 0 0 auto;
             }
             .right-nav{
                 order: 3;
+                flex: 0 0 auto;
+            }
+            .right-nav, .left-nav{
+                text-align: center;
+                margin: 0;
+                li{
+                    display: block;
+                }
             }
         }
     }
