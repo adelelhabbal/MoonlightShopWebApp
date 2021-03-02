@@ -42,7 +42,7 @@
         }
         .nav-logo{
             flex: 0 0 150px;
-            min-width: 150px;
+            max-width: 150px;
             img{
                 width: 100%;
                 height: auto;
@@ -110,10 +110,16 @@
             }
         }
         .navbar-content-wrapper{
-            box-sizing: border-box;
-            padding: 0;
-            height: 0;
-            overflow: hidden;
+            display: none;
+            .nav-logo{
+                order: 1;
+            }
+            .left-nav{
+                order: 2;
+            }
+            .right-nav{
+                order: 3;
+            }
         }
     }
 }

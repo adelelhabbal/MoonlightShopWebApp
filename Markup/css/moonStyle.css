@@ -44,7 +44,7 @@
 }
 .navbar .navbar-content-wrapper .nav-logo {
   flex: 0 0 150px;
-  min-width: 150px;
+  max-width: 150px;
 }
 .navbar .navbar-content-wrapper .nav-logo img {
   width: 100%;
@@ -116,10 +116,16 @@
     transform: rotate(90deg);
   }
   .navbar .navbar-content-wrapper {
-    box-sizing: border-box;
-    padding: 0;
-    height: 0;
-    overflow: hidden;
+    display: none;
+  }
+  .navbar .navbar-content-wrapper .nav-logo {
+    order: 1;
+  }
+  .navbar .navbar-content-wrapper .left-nav {
+    order: 2;
+  }
+  .navbar .navbar-content-wrapper .right-nav {
+    order: 3;
   }
 }
 html, body {
