@@ -46,21 +46,17 @@
   height: auto;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 footer {
   font-size: 10px;
   text-align: center;
   background-color: lightgray;
   padding-top: 16px;
   padding-bottom: 16px;
-}
-
-.drop-down-menu {
-  display: none;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
 }
 
 /*# sourceMappingURL=moonStyle.css.map */
