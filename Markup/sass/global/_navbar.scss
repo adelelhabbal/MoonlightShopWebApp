@@ -1,5 +1,5 @@
 .custom-navbar{
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 1);
     .drop-down-menu{
         display: none;
     }
@@ -65,11 +65,6 @@
 @media (min-width: 768px){
     #navBar{
         display: block !important;
-    }
-    .custom-navbar{
-        &:after{
-
-        }
     }
 }
 @media (max-width: 767px){
