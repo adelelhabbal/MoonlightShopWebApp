@@ -1,37 +1,57 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="sass\moonStyle.css">
-        <title>
-            Moonlight Shop
-        </title>
-    </head>
-    <body>
-         <nav class="navbar">
-        <div class="container">
-            <div class="navbar-content-wrapper">
-                <ul class="dropDownMenu">
-                    <li>&#9776;</li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/css/moonStyle.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <title>
+        Moonlight Shop
+    </title>
+</head>
+
+<body>
+    <nav class="custom-navbar">
+        <div class="mobile-header-wrapper">
+            <div class="nav-logo-mobile">
+                <img src="Media/Moonlight Shop Logo.png">
+            </div>
+            <div data-target="#navBar" class="dropdown-toggle drop-down-menu">
+                <span class="menu-toggle"></span>
+            </div>
+        </div>
+        <div id="navBar" class="navbar-content-wrapper">
+            <div class="w-100 d-flex flex-md-row flex-column align-items-center">
+                <ul class="left-nav">
+                    <li><a href="index.html"></a>HOME</li>
+                    <li><a href="#"></a>PRODUCTS</li>
                 </ul>
-                <ul class="leftNav">
-                    <li>HOME</li>
-                    <li>PRODUCTS</li>
-                </ul>
-                <div class="navLogo">
-                    <img class="navLogoImg" src="Media/Moonlight Shop Logo.png">
+                <div class="nav-logo">
+                    <img src="Media/Moonlight Shop Logo.png">
                 </div>
-                <ul class="rightNav">
-                    <li>ABOUT</li>
-                    <li>CONTACT</li>
+                <ul class="right-nav">
+                    <li><a href="#"></a>ABOUT</li>
+                    <li><a href="#"></a>CONTACT</li>
                 </ul>
             </div>
         </div>
     </nav>
-    </body>
-    <footer>
-        <p>&copy; The Moonlight Shop</p>
-    </footer>
-    <script src="js/jquery.min.js"></script>
+      <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="Media\Product Items\Alien Head.jpg" alt="Alien"></div>
+      <div class="swiper-slide"><img src="Media/Product Items/Butterfly.jpg"Rose"></div>
+    </div>
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+</body>
+<footer>
+    <p>&copy; The Moonlight Shop</p>
+</footer>
+<script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.js"></script>
+<script src="js/global.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
 </html>
