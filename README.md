@@ -1,7 +1,7 @@
 # MoonlightShopWeb
 Practice project, learning fundamentals of web development 
 
-#Business requirements
+# Business requirements
 Client has asked for a website to facilitate order handling.
 The key points are:
 Display offers
@@ -10,7 +10,7 @@ Order products
 Sleek design with shop’s theme
 Panel to be able to modify products and offers
 
-#Technology to be used:
+# Technology to be used:
 Visual studio
 Dot Net web application
 Umbraco CMS
