@@ -7,6 +7,16 @@ function initDropdowns(){
         })
     }
 }
+function swiper(){
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+          el: '.swiper-pagination',
+          dynamicBullets: true,
+        },
+      });
+}
+
 $(document).ready(function(){
     initDropdowns();
+    swiper();
 })

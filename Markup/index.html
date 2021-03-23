@@ -1,10 +1,10 @@
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/moonStyle.css">
+    <link rel="stylesheet" href="sass/css/moonStyle.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <title>
         Moonlight Shop
     </title>
@@ -23,19 +23,29 @@
         <div id="navBar" class="navbar-content-wrapper">
             <div class="w-100 d-flex flex-md-row flex-column align-items-center">
                 <ul class="left-nav">
-                    <li>HOME</li>
-                    <li>PRODUCTS</li>
+                    <li><a href="index.html"></a>HOME</li>
+                    <li><a href="#"></a>PRODUCTS</li>
                 </ul>
                 <div class="nav-logo">
                     <img src="Media/Moonlight Shop Logo.png">
                 </div>
                 <ul class="right-nav">
-                    <li>ABOUT</li>
-                    <li>CONTACT</li>
+                    <li><a href="#"></a>ABOUT</li>
+                    <li><a href="#"></a>CONTACT</li>
                 </ul>
             </div>
         </div>
     </nav>
+      <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="Media\Product Items\Alien Head.jpg" alt="Alien"></div>
+      <div class="swiper-slide"><img src="Media/Product Items/Butterfly.jpg"Rose"></div>
+    </div>
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
 </body>
 <footer>
     <p>&copy; The Moonlight Shop</p>
@@ -43,5 +53,5 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/global.js"></script>
-
+<script src="js/swiper-bundle.min.js"></script>
 </html>
