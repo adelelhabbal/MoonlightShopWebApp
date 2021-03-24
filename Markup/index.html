@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,12 +14,15 @@
 <body>
     <nav class="custom-navbar">
         <div class="mobile-header-wrapper">
-            <div class="nav-logo-mobile">
+            <div class="nav-left-mobile">
+                <div data-target="#navBar" class="dropdown-toggle drop-down-menu">
+                    <span class="menu-toggle"></span>
+                </div>
+            </div>
+            <div class="nav-right-mobile">
                 <img src="Media/Moonlight Shop Logo.png">
             </div>
-            <div data-target="#navBar" class="dropdown-toggle drop-down-menu">
-                <span class="menu-toggle"></span>
-            </div>
+            <div style="width: 52px;"></div>
         </div>
         <div id="navBar" class="navbar-content-wrapper">
             <div class="w-100 d-flex flex-md-row flex-column align-items-center">
@@ -35,16 +39,17 @@
                 </ul>
             </div>
         </div>
+        </div>
     </nav>
-      <!-- Swiper -->
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="Media\Product Items\Alien Head.jpg" alt="Alien"></div>
-      <div class="swiper-slide"><img src="Media/Product Items/Butterfly.jpg"Rose"></div>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="Media\Product Items\Alien Head.jpg"></div>
+            <div class="swiper-slide"><img src="Media/MiddleHome.png"></div>
+        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
     </div>
-    <!-- Pagination -->
-    <div class="swiper-pagination"></div>
-  </div>
 
 </body>
 <footer>
@@ -54,4 +59,5 @@
 <script src="js/bootstrap.js"></script>
 <script src="js/global.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
+
 </html>
