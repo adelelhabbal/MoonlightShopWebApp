@@ -40,7 +40,7 @@ function listGridView(){
   });
 }
 $(document).ready(function(){
-    initDropdowns();
-    swiper();
-    listGridView();
+  listGridView();
+  initDropdowns();
+  swiper();
 })
