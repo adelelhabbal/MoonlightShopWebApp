@@ -109,14 +109,15 @@ footer {
 /*Swiper*/
 .swiper-container {
 	width: 70%;
-	height: 80%;
+	height: 93%;
 	border: 2px solid magenta;
 	.swiper-wrapper {
 		border: 2px solid RED;
+		height: auto;
 		.swiper-slide {
 			border: 2px solid green;
 			display: flex;
-			max-height: 93%;
+			max-height: 100%;
 			justify-content: center;
 			align-items: center;
 			img {
@@ -147,9 +148,6 @@ footer {
 			width: 100%;
 			align-items: center;
 			justify-content: space-between;
-			.nav-left-mobile {	
-				
-			}
 			.nav-right-mobile {
 				display: block;
 			}

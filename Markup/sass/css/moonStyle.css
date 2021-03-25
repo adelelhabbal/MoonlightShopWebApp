@@ -112,16 +112,17 @@ footer {
 /*Swiper*/
 .swiper-container {
   width: 70%;
-  height: 80%;
+  height: 93%;
   border: 2px solid magenta;
 }
 .swiper-container .swiper-wrapper {
   border: 2px solid RED;
+  height: auto;
 }
 .swiper-container .swiper-wrapper .swiper-slide {
   border: 2px solid green;
   display: flex;
-  max-height: 93%;
+  max-height: 100%;
   justify-content: center;
   align-items: center;
 }
