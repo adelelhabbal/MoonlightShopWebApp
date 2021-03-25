@@ -9,9 +9,20 @@ function initDropdowns(){
 }
 function swiper(){
     var swiper = new Swiper('.swiper-container', {
+        autoHeight: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
         pagination: {
           el: '.swiper-pagination',
-          dynamicBullets: true,
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         },
       });
 }
