@@ -1,6 +1,5 @@
 # MoonlightShopWeb
-Practice project, learning fundamentals of web development
-currently changes are being applied only to markup
+Practice project with potential to become live.
 
 # Business requirements
 Client has asked for a website to facilitate order handling.
