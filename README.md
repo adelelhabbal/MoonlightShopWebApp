@@ -12,10 +12,8 @@ Sleek design with shop’s theme
 Panel to be able to modify products and offers
 
 # Technology to be used:
-Visual studio
-Dot Net web application
-Umbraco CMS
-SQL server and SSMS
-Photoshop
-
-(Reconsidering Express MongoDB)
+-Node.js
+-Express
+-EJS
+-MongoDB
+-Mongoose
