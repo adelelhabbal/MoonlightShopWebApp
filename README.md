@@ -17,3 +17,5 @@ Dot Net web application
 Umbraco CMS
 SQL server and SSMS
 Photoshop
+
+(Reconsidering Express MongoDB)
